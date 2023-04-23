@@ -107,8 +107,8 @@ app.get("/",function(req,res){
 app.get("/login.ejs",(req,res)=>{
     res.render("login");
 })
-app.get("/Teacherlogin.ejs",(req,res)=>{
-    res.render("Teacherlogin");
+app.get("/teacherlogin.ejs",(req,res)=>{
+    res.render("teacherlogin");
 })
 app.get("/register.ejs",(req,res)=>{
     res.render("register");
