@@ -1,9 +1,14 @@
-body {
-	margin:  0;
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    /* background-color: #a0c1e4; */
 }
 .page-content {
-	width: 100%;
-	margin:  0 auto;
+	/* width: 100%; */
+	/* margin:  0 auto; */
+	height: 100vh;
+	width: 100vw;
 	background: #75e2e9;
 	display: flex;
 	display: -webkit-flex;
@@ -20,7 +25,7 @@ body {
 }
 .form-v4-content  {
 	background: #fff;
-	width: 850px;
+	/* width: 850px; */
 	border-radius: 10px;
 	-o-border-radius: 10px;
 	-ms-border-radius: 10px;
@@ -36,6 +41,8 @@ body {
 	display: flex;
 	display: -webkit-flex;
 	font-family: 'Open Sans', sans-serif;
+	height: 87vh;
+	width: 55vw;
 }
 .form-v4-content h2 {
 	font-weight: 700;
@@ -271,8 +278,10 @@ body {
 .form-v4-content .form-detail .register:hover {
 	background: #2f73a3;
 }
-.form-v4-content .form-detail .form-row-last input {
-	padding: 12.5px;
+.form-v4-content .form-detail .form-row-last  {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
 }
 
 /* Responsive */

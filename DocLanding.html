@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Choice</title>
     <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        * {box-sizing: border-box;}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
         .btn {
         background-color: dodgerblue;
         color: white;
@@ -15,7 +21,7 @@
         margin: 15px;
         border: none;
         cursor: pointer;
-        width: 25%;
+        width: 100%;
         opacity: 0.9;
         }
         .btn:hover {
@@ -24,14 +30,46 @@
         .main{
             text-align: center;
         }
+        .main{
+            position: relative;
+        }
+        h1{
+            z-index: 15;
+        }
+        .ima{
+            position: relative;
+            margin: 0;
+            z-index: 0.5;
+        }
+        .text{
+            position: absolute;
+            text-align: center;
+            top: 10%;
+            left: 40%;
+            /* margin-top: 20px; */
+        }
+        .text h1{
+            margin-left: 12%;
+        }
+        img{
+            z-index: 0.5;
+            width: 100vw;
+            height: 100vh;
+        }
 
     </style>
 </head>
 <body>
-    <div class="main">
-        <h1>Welcome Doctor!</h1>
-        <button class="btn" onclick="location.href = 'detailsFromDoc.html';">Enter patient details</button><br>
-        <button class="btn" onclick="location.href = 'index.ejs';">View patient details</button>
-    </div>
+    <!-- <div class="main"> -->
+        <div class="ima">
+            <img src="heart.jpeg">
+            <div class="text">
+                <h1 style="color: white;">Welcome Doctor!</h1>
+                <button class="btn" onclick="location.href = 'detailsFromDoc.html';">Enter patient details</button><br>
+                <button class="btn" onclick="location.href = 'index.ejs';">View patient details</button>
+            </div>
+        </div>
+        
+    <!-- </div> -->
 </body>
 </html>

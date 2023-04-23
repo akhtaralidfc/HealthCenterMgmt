@@ -16,16 +16,18 @@
             <th scope="col">BRANCH</th>
             <th scope="col">DATE</th>
             <th scope="col">PROBLEM</th>
+            <th scope="col">COMMENTS</th>
           </tr>
         </thead>
         <tbody>
-          <% detailedList.forEach(detailss=>{ %>
+          <% detailedList.forEach(i=>{ %>
             <tr>
-                <td><%= detailss.Usn %></td>
-                <td><%= detailss.Name %></td>
-                <td><%= detailss.Branch %></td>
-                <td><%= detailss.RegDate %></td>
-                <td><%= detailss.Problem %></td>
+                <td><%= i.Usn; %></td>
+                <td><%= i.Name; %></td>
+                <td><%= i.Branch; %></td>
+                <td><%= i.RegDate; %></td>
+                <td><%= i.Problem; %></td>
+                <td><%= i.MediComments; %></td>
               </tr>
           <% }) %>
         </tbody>
